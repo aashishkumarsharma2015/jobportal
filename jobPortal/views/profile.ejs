@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Job Portal</title>
+		<link rel="stylesheet" href="/stylesheets/style1.css">
+		<style type="text/css">
+			body
+			{
+				background: none;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="navbar_ele">
+    		<img style="cursor: pointer" src="/images/job_seek_logo.png" onclick="window.location='/'" id="image_head" style="float:left;">
+		<ul class="list">
+			<li class="dropdown"><a href="#" class="dropbtn">JOBS</a>
+			<div class="dropdown-content">
+    			<a href="#">Jobs Search</a>
+    			<a href="/addJob">Add a Job</a>
+    			<a href="#">Job Dashboard</a>
+  			</div>
+			</li>
+			<li><a href="#">CANDIDATES</a></li>
+			<li><a href="#">COMPANIES</a></li>
+			<li><a href="#">CATEGORIES</a></li>
+			<li class="dropdown2"><a href="#" class="dropbtn2">PAGES</a>
+			<div class="dropdown-content2">
+    			<a href="#">About Us </a>
+    			<a href="/testimonials">Testimonials</a>
+  			</div>
+       </li> 
+			<li><a href="/form">You are logged in</a></li>
+	</div>
+	</ul>
+	</div>
+
+
+
+	<div style="padding-top: 100px;width: 100%;text-align: center;">
+		You are logged in as <br><strong><%= email %></strong>
+	</div>
+
+	
+
+	</body>
+</html>

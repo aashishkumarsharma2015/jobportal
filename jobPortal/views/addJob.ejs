@@ -1,0 +1,147 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <link rel="stylesheet" href="/stylesheets/style1.css">
+	<title>mainpage</title>
+	<style>
+	body{
+		font-family: Cambria;
+		background-image: none;
+		overflow: auto;
+	}
+	input{
+		 border-radius: 7px;
+		 background-color:#f2f2f2;
+		 border:1px solid #d9d9d9;
+	}
+	.abc{
+		width:100%;
+		height:100px;
+		color:Black;
+		background-color: #74A3FF;
+		padding: 5px;
+	}
+	.def
+	{
+		width: 100%;
+		height:90px;
+		padding: 5px;
+		border:1px solid orange;
+	}
+	.button {
+    background-color: #FF6600; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s;
+}
+.button1:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+table
+{
+	padding:5px;
+}
+
+	</style>
+</head>
+<body>
+
+<div class="navbar_ele">
+    <img style="cursor: pointer" src="/images/job_seek_logo.png" onclick="window.location='/'" id="image_head" style="float:left;">
+		<ul class="list">
+			<li class="dropdown"><a href="#" class="dropbtn">JOBS</a>
+			<div class="dropdown-content">
+    			<a href="#">Jobs Search</a>
+    			<a href="#">Add a Job</a>
+    			<a href="#">Job Dashboard</a>
+  			</div>
+			</li>
+			<li><a href="#">CANDIDATES</a></li>
+			<li><a href="#">COMPANIES</a></li>
+			<li><a href="#">CATEGORIES</a></li>
+			<li class="dropdown2"><a href="#" class="dropbtn2">PAGES</a>
+			<div class="dropdown-content2">
+    			<a href="#">About Us </a>
+    			<a href="testimonials">Testimonials</a>
+  			</div>
+       </li> 
+			<li><a href="/form">LOGIN/REGISTER</a></li>
+	</div>
+	</ul>
+	</div>
+
+
+
+	<div class="abc" style="background-color:#f2f2f2;padding-top: 80px">
+		<h1 style="text-align:center;font-size: 2.3em; letter-spacing:3px;">ADD A JOB</h1>
+
+	</div>
+<p style="font-size:1.3em;">Have an account?</p>
+<div class="def">
+	<p style="color:orange;text-align:justify; font-size:1.1em; margin:auto;">If you don't have an account you can create one below by entering your email address/username.Your account details will be confirmed&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span style="align:right;"><button onclick="window.location='/form'" class="button button1">Sign Up !!</button></span><br>via email.</p>
+	<table>
+	<br><br>
+	<tr><td><label>Your email</label></td></tr>
+	<tr><td><input type="email" autofocus placeholder="you@domain.com" required style="height:50px; width:100%;"></td></tr>
+	<tr><td>Job title</td></tr>
+	<tr><td><input type="text" autofocus  required style="height:50px; width:100%;"></td></tr>
+	<tr><td>Location(optional)</td></tr>
+	<tr><td><input type="text" placeholder="e.g. 'London'"autofocus  required style="height:50px; width:100%;"><br>
+	<p style="color:#4CCCCC;">Leave this blank if the location is not important.</p></td></tr>
+	<tr><td>Job type</td></tr>
+	<tr><td><input type="text" placeholder="Full Time" autofocus  required style="height:50px; width:100%; "></td></tr>
+	<tr><td>Job category</td></tr>
+	<tr><td><input type="text" placeholder="Choose a category..." autofocus  required style="height:50px; width:100%;">
+	<tr><td>Description</td></tr>
+	<tr><td><textarea cols="150" rows="10"></textarea></td></tr>
+	<tr><td>Application email/URL</td></tr>
+	<tr><td><input type="text" placeholder="Enter an email address or website URL" autofocus  required style="height:50px; width:100%;">
+	</td></tr>
+	<tr><td>Hours per week (optional)</td></tr>
+	<tr><td><input type="text" placeholder="Enter an email address or website URL" autofocus  required style="height:50px; width:100%;">
+	<tr><td>External "Apply for Job" link (optional)</td></tr>
+	<tr><td><input type="text" placeholder="http://" autofocus  required style="height:50px; width:100%;"></td></tr>
+	</table>
+
+	<HR color="#B7BA9C"></HR>
+	<h1>Company Details</h1>
+	<table>
+		<tr><td>Company name</td></tr>
+		<tr><td><input type="text" placeholder="Enter the name of the company" autofocus  required style="height:50px; width:528%;"></td></tr>
+		<tr><td>Website (optional)</td></tr>
+		<tr><td><input type="text" placeholder="http://" autofocus  required style="height:50px; width:528%;"></td></tr>
+		<tr><td>Tagline (optional)</td></tr>
+		<tr><td><input type="text" placeholder="Breifly describe your company" autofocus  required style="height:50px; width:528% ;"></td></tr>
+		<tr><td>Video (optional)</td></tr>
+		<tr><td><input type="text" placeholder="A link to a video about your company" autofocus  required style="height:50px; width:528% ;"></td></tr>
+		<tr><td>Twitter username (optional)</td></tr>
+		<tr><td><input type="email" placeholder="@company" autofocus   required style="height:50px; width:528%;"></td></tr>
+		<tr><td>Logo (optional)</td></tr>
+		<tr><td><input type="file" autofocus  required style="height:50px; width:528%;background-color:#CCFFFF;"><br><p style="color:#F0F8FF;">Maximum file size:1 MB.</p></td></tr> 
+		<tr><td><button class="button button1" style="background-color: #3CCECF;">Preview</button>
+
+
+
+	</table>
+
+
+
+	</div>
+
+
+</body>
+
+
+
+
+
+
+

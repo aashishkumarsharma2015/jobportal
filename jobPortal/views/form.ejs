@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Login Form
+		</title>
+		  <link rel="stylesheet" href="/stylesheets/style1.css">
+	</head>
+	<body>
+		<div class="navbar_ele">
+  		  <img style="cursor: pointer" src="/images/job_seek_logo.png" onclick="window.location='/'" id="image_head" style="float:left;">
+		<ul class="list">
+			<li class="dropdown"><a href="#" class="dropbtn">JOBS</a>
+			<div class="dropdown-content">
+    			<a href="#">Jobs Search</a>
+    			<a href="/addJob">Add a Job</a>
+    			<a href="#">Job Dashboard</a>
+  			</div>
+			</li>
+			<li><a href="#">CANDIDATES</a></li>
+			<li><a href="#">COMPANIES</a></li>
+			<li><a href="#">CATEGORIES</a></li>
+			<li class="dropdown2"><a href="#" class="dropbtn2">PAGES</a>
+			<div class="dropdown-content2">
+    			<a href="#">About Us </a>
+    			<a href="testimonials">Testimonials</a>
+  			</div>
+       		</li> 
+			<li><a href="/form">LOGIN/REGISTER</a></li>
+			</div>
+		</ul>
+		</div>
+		<div class="login_page" style="float:left;margin-top:100px; margin-left:80px; padding:10px;">
+		<form action="/login" method="POST">
+			<h1>LOGIN</h1>
+			<br>
+			<label>Username or email <span style="color:red;">*</span></label>
+			<br><br>
+			<input type="text" name="email" style="height:40px; width:550px; background-color:#f2f2f2; border:1px solid #d9d9d9;" required>
+			<br><br>
+			<label>Password <span style="color:red;">*</span></label>
+			<br><br>
+			<input type="password" name="password" style="height:40px; width:550px; background-color:#f2f2f2;  border:1px solid #d9d9d9;" required>
+			<br><br><br>
+			<input class="submit" type="submit" style="height:48px; width:85px; font-size:1.2em;">
+			<br><br>
+			<a href="#" style="color:red; font-weight:bold; font-size:1.2em;">Lost your password ?</a>
+		</form>	
+		</div>
+		
+
+		<div class="register" style="float:right; margin-top:100px; padding:10px; padding-left:48px; margin-right:50px; border-left:1px solid #d9d9d9;">
+		<form action="/registration" method="POST">
+			<h1>REGISTER</h1>
+			<br>
+			<label>Email address <span style="color:red;">*</span></label>
+			<br><br>
+			<input type="email" name='email' style="height:40px; width:550px; background-color:#f2f2f2; border:1px solid #d9d9d9;" required>
+			<br><br>
+			<label>Password <span style="color:red;">*</span></label>
+			<br><br>
+			<input type="password" name="password" style="height:40px; width:550px; background-color:#f2f2f2;  border:1px solid #d9d9d9;" required>
+			<br><br>
+			<label>Register as <span style="color:red;">*</span></label>
+			<br><br>
+			<input type="text" name="reg" placeholder="Employer" style="height:40px; width:550px; background-color:#f2f2f2;  border:1px solid #d9d9d9;" required>
+			<br><br><br>
+			<input  class="submit" type="submit" style="height:48px; width:85px; font-size:1.2em;">
+		</form>	
+		</div>
+	</body>
+
+<style>
+body{
+	font-family: "Segoe UI";
+	background-image: none;
+}
+	
+label{
+	font-size: 1.3em;
+}
+input{
+	font-size: 1.3em;
+	padding:3px;
+	border-radius: 5px;
+
+}
+h1{
+	letter-spacing: 2px;
+}
+.submit{
+	background-image:linear-gradient(to right,#14b1bb,#13a4da);
+	border:none;
+	border-radius: 5px;
+	color:white;
+}
+.submit:hover{
+	transform: translateY(8px);
+	transition: 1s;
+}
+</style>	
+
+</html>
